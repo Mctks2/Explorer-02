@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #1F1534;
+  --secondary-color: #89C5CC;
+  --hover-color: #69B99D;
+
+  --ff-primary: 'Mulish', sans-serif;
+  --ff-secondary: 'Open Sans', sans-serif;
+
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+  min-height: 100vh;
+}
+
+.page {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 6.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5.5rem;
+  font-family: var(--ff-primary);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 4.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+ul li a {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+ul li a:hover {
+  font-weight: 700;
+  opacity: 1;
+}
+
+h1, ul {
+  font-family: var(--ff-primary);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 4.9rem;
+  line-height: 5.6rem;
+  color: var(--primary-color);
+  font-weight: normal;
+  width: 49rem;
+}
+
+h1 span {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+section p {
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  color: #7D7987;
+  margin: 4rem 0;
+}
+
+button {
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--ff-secondary);
+  background: var(--hover-color);
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.4rem 3.2rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background: #4EA788;
+}
+
+footer {
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  text-align: center;
+  margin-top: 8rem;
+}
+
+footer a {
+  font-weight: 700;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/* medias queries */
+@media (max-width: 1000px) {
+  .page {
+    width: 90%;
+  }
+
+  h1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    width: 90%;
+  }
+
+  h1 {
+    width: 100%;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  ul {
+    justify-content: center;
+  }
+
+  #balls {
+    display: none;
+  }
+}
